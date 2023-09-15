@@ -3,38 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>to do list</title>
     <link rel="stylesheet" href="style.css">
+    <title>To do list</title>
 </head>
 <body>
-    <h1>Lista de <span>Tarefas</span></h1>
+    <header>
+        <h1>Lista de<span> tarefas</span></h1>
+    </header>
+
     <main class="container">
-        <form id="cadastro">
-          <input 
-            type="text" 
-            name="texto-input" 
-            id="texto-input" 
-            placeholder="Digite sua nova Tarefa">
-        <button>Adicionar Tarefa</button>
-    </form>
-    <div id="Tarefas">
-        <ul>
-            <li>Tarefa 1
-            <div>
-            <button class="excluir"> ❌</button>
-            <button class="realizado">✔️</button>
-            </div>
-        </li>
-        </ul>
-        <ul>
-            <li>Tarefa 2
-            <div>
-            <button class="excluir">❌</button>
-            <button class="realizado">✔️</button>
-            </div>
-        </li>
-        </ul>
-    </div>
+        <form id="cadrasto">
+            <input
+             type="text"
+              name="texto-input" 
+              id="texto-input"
+              placeholder="Digite sua nova tarefa">
+
+            <button id="adicionar">Adicionar tarefa</button>
+        </form>
+        <div id="tarefas">
+            <ul>
+                <li>
+                    Tarefa 1
+                    <div>
+                        <button class="excluir"></button>
+                        <button class="concluir"></button>
+                    </div>
+                </li>
+                <li>
+                    Tarefa 2
+                    <div>
+                        <button class="excluir"></button>
+                        <button class="concluir"></button>
+                    </div>
+                </li>
+           
+            </ul>
+        </div>
+
+
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
